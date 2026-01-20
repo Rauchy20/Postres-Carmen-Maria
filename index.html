@@ -1,42 +1,45 @@
 <style>
 .menu-container {
     max-width: 800px;
-    margin: 40px auto;
+    margin: 20px auto;
     background: #1f1f1f;
     border: 2px solid #b89b5e;
-    padding: 40px;
+    padding: 30px;
     font-family: Georgia, serif;
     color: #f2e6d8;
     box-shadow: 0 0 20px rgba(0,0,0,0.8);
 }
 
+/* Títulos */
 .titulo {
     text-align: center;
-    font-size: 38px;
+    font-size: 2.4rem; /* adaptable a pantallas pequeñas */
     letter-spacing: 2px;
     color: #e6c88a;
 }
 
 .subtitulo {
     text-align: center;
-    font-size: 26px;
+    font-size: 1.6rem;
     margin-top: 10px;
 }
 
 .casero {
     text-align: center;
-    font-size: 22px;
+    font-size: 1.3rem;
     font-style: italic;
     color: #d6b97b;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
+/* Línea separadora */
 .linea {
     border-top: 2px solid #b89b5e;
     border-bottom: 2px solid #b89b5e;
     margin: 20px 0;
 }
 
+/* Lista de menú */
 .menu {
     list-style: none;
     padding: 0;
@@ -48,37 +51,73 @@
     justify-content: space-between;
     padding: 10px 0;
     border-bottom: 1px dotted #b89b5e;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
+/* Precio */
 .precio {
     color: #e6c88a;
     font-weight: bold;
 }
 
+/* Instagram */
 .instagram {
     text-align: center;
-    margin: 35px 0;
+    margin: 25px 0;
 }
 
 .instagram a {
     text-decoration: none;
     color: #e6c88a;
     border: 2px solid #b89b5e;
-    padding: 15px 25px;
+    padding: 12px 20px;
     border-radius: 12px;
     display: inline-block;
+    font-size: 0.9rem;
 }
 
 .instagram a:hover {
     background: #2a2a2a;
 }
 
+/* Teléfono */
 .telefono {
     text-align: center;
-    font-size: 22px;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #e6c88a;
+}
+
+/* Ajustes para móviles y pantallas pequeñas */
+@media (max-width: 600px) {
+    .menu-container {
+        padding: 20px;
+        margin: 10px;
+    }
+    .titulo {
+        font-size: 1.8rem;
+    }
+    .subtitulo {
+        font-size: 1.4rem;
+    }
+    .casero {
+        font-size: 1.1rem;
+    }
+    .menu li {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 0.95rem;
+    }
+    .precio {
+        margin-top: 4px;
+    }
+    .instagram a {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+    .telefono {
+        font-size: 1rem;
+    }
 }
 </style>
 
